@@ -13,7 +13,7 @@ const AddUser = (props) => {
         if (enterUsername.trim().length === 0 || enterAge.trim().length === 0){
             return;
         }
-        if (enterAge < 1) {
+        if (+enterAge < 1) {
             return;
         }
         setEnterUsername('')
